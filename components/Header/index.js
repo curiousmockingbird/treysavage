@@ -58,7 +58,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
-                  ></img>
+                  > 
+                  </img>
                 </Popover.Button>
               </div>
             </div>

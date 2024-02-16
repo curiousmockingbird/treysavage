@@ -63,11 +63,11 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
+        <div className="mt-10">
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptop:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
@@ -98,19 +98,23 @@ export default function Home() {
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
-              <Link href={`blog/${project.id}`}>
+              <Link legacyBehavior href={`blog/${project.id}`}>
+                <a id="link">
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
               />
+                </a>
               </Link>
             ))}
           </div>
             <div className="flex justify-center">
-            <Link href={'/blog'}>      
+            <Link legacyBehavior href={'/blog'}>
+            <a id="link">             
             <h1 className="text-2xl text-bold">Show more...</h1>
+            </a>      
             </Link>
             </div>
         </div>
