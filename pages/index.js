@@ -7,9 +7,10 @@ import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import Image from "next/image";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -98,15 +99,13 @@ export default function Home() {
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
-              <Link legacyBehavior href={`blog/${project.id}`}>
-                <a id="link">
+              <Link key={project.id} legacyBehavior href={`blog/${project.id}`}>
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
               />
-                </a>
               </Link>
             ))}
           </div>
