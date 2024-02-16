@@ -1,6 +1,6 @@
 ---
 date: "2022-07-08T11:50:54.000Z"
-title: Work 1
+title: Work 3
 tagline: This is a Tagline If you want to add.
 preview: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -8,7 +8,7 @@ preview: >-
   when an unknown printer took a galley of type and scrambled it to make a type
   specimen book.
 image: >-
-  https://res.cloudinary.com/graphicdesignportfolio/image/upload/v1707159937/samples/Trey/Skater_lwgyyy.png
+  https://res.cloudinary.com/graphicdesignportfolio/image/upload/v1707160786/samples/Trey/Picasso_rsj0wp.png
 ---
 
 # Heading One

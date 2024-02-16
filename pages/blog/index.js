@@ -30,20 +30,20 @@ const Blog = ({ posts }) => {
     setMounted(true);
   }, []);
 
-  const createBlog = () => {
-    if (process.env.NODE_ENV === "development") {
-      fetch("/api/blog", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }).then(() => {
-        router.reload(window.location.pathname);
-      });
-    } else {
-      alert("This thing only works in development mode.");
-    }
-  };
+  // const createBlog = () => {
+  //   if (process.env.NODE_ENV === "development") {
+  //     fetch("/api/blog", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     }).then(() => {
+  //       router.reload(window.location.pathname);
+  //     });
+  //   } else {
+  //     alert("This thing only works in development mode.");
+  //   }
+  // };
 
   // const deleteBlog = (slug) => {
   //   if (process.env.NODE_ENV === "development") {
@@ -94,6 +94,8 @@ const Blog = ({ posts }) => {
                       className="w-full h-60 rounded-lg shadow-lg object-cover"
                       src={post.image}
                       alt={post.title}
+                      width={300}
+                      height={300}
                     ></Image>
                     <h2 className="mt-5 text-4xl">{post.title}</h2>
                     <p className="mt-2 opacity-50 text-lg">{post.preview}</p>
@@ -118,13 +120,13 @@ const Blog = ({ posts }) => {
             </div>
           </div>
         </div>
-        {process.env.NODE_ENV === "development" && mounted && (
+        {/* {process.env.NODE_ENV === "development" && mounted && (
           <div className="fixed bottom-6 right-6">
             <Button onClick={createBlog} type={"primary"}>
               Add New Post +{" "}
             </Button>
           </div>
-        )}
+        )} */}
       </>
     )
   );

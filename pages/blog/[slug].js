@@ -6,17 +6,15 @@ import Footer from "../../components/Footer";
 import Head from "next/head";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
-import Button from "../../components/Button";
-import BlogEditor from "../../components/BlogEditor";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
+import Image from "next/image";
 
 const BlogPost = ({ post }) => {
-  const [showEditor, setShowEditor] = useState(false);
   const textOne = useRef();
   const textTwo = useRef();
-  const router = useRouter();
+  // const router = useRouter();
 
   useIsomorphicLayoutEffect(() => {
     stagger([textOne.current, textTwo.current], { y: 30 }, { y: 0 });
@@ -37,11 +35,13 @@ const BlogPost = ({ post }) => {
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
-          <img
+          <Image
             className="w-full h-96 rounded-lg shadow-lg object-cover"
             src={post.image}
             alt={post.title}
-          ></img>
+            width={500}
+            height={500}
+          ></Image>
           <h1
             ref={textOne}
             className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold"
@@ -58,7 +58,7 @@ const BlogPost = ({ post }) => {
         <ContentSection content={post.content}></ContentSection>
         <Footer />
       </div>
-      {process.env.NODE_ENV === "development" && (
+      {/* {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
           <Button onClick={() => setShowEditor(true)} type={"primary"}>
             Edit this blog
@@ -72,7 +72,7 @@ const BlogPost = ({ post }) => {
           close={() => setShowEditor(false)}
           refresh={() => router.reload(window.location.pathname)}
         />
-      )}
+      )} */}
     </>
   );
 };
