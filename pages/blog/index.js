@@ -30,38 +30,6 @@ const Blog = ({ posts }) => {
     setMounted(true);
   }, []);
 
-  // const createBlog = () => {
-  //   if (process.env.NODE_ENV === "development") {
-  //     fetch("/api/blog", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     }).then(() => {
-  //       router.reload(window.location.pathname);
-  //     });
-  //   } else {
-  //     alert("This thing only works in development mode.");
-  //   }
-  // };
-
-  // const deleteBlog = (slug) => {
-  //   if (process.env.NODE_ENV === "development") {
-  //     fetch("/api/blog", {
-  //       method: "DELETE",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         slug,
-  //       }),
-  //     }).then(() => {
-  //       router.reload(window.location.pathname);
-  //     });
-  //   } else {
-  //     alert("This thing only works in development mode.");
-  //   }
-  // };
   return (
     showBlog.current && (
       <>
@@ -102,31 +70,11 @@ const Blog = ({ posts }) => {
                     <span className="text-sm mt-5 opacity-25">
                       {ISOToDate(post.date)}
                     </span>
-                    {/* {process.env.NODE_ENV === "development" && mounted && (
-                      <div className="absolute top-0 right-0">
-                        <Button
-                          onClick={(e) => {
-                            deleteBlog(post.slug);
-                            e.stopPropagation();
-                          }}
-                          type={"primary"}
-                        >
-                          Delete
-                        </Button>
-                      </div>
-                    )} */}
                   </div>
                 ))}
             </div>
           </div>
         </div>
-        {/* {process.env.NODE_ENV === "development" && mounted && (
-          <div className="fixed bottom-6 right-6">
-            <Button onClick={createBlog} type={"primary"}>
-              Add New Post +{" "}
-            </Button>
-          </div>
-        )} */}
       </>
     )
   );

@@ -1,0 +1,146 @@
+{
+    "name": "Trey Savage",
+    "location": "Milwaukee, WI 53220",
+    "email": "savagetc4599@wi.rr.com",
+    "education": [
+      {
+        "institution": "University of Wisconsin-Milwaukee",
+        "degree": "Major: Studio Art; Minor: Spanish",
+        "dates": "September 2016 – May 2021"
+      },
+      {
+        "institution": "Atlas Preparatory Academy, Milwaukee, WI",
+        "degree": "Valedictorian",
+        "dates": "Graduated High Honors 2016"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Intern",
+        "program": "Summer ArtXpress Program",
+        "location": "Milwaukee Art Museum, Milwaukee, WI",
+        "dates": "July - August 2016",
+        "details": [
+          "Collaboratively worked with peers in the arts",
+          "Learned printmaking techniques",
+          "Produced a social justice-oriented mural",
+          "Taught art to students"
+        ]
+      },
+      {
+        "title": "Intern",
+        "program": "\"Culture Works\"",
+        "location": "ArtWorks for Milwaukee, Milwaukee, WI",
+        "dates": "March 2016 - January 2017",
+        "details": [
+          "Learned printmaking skills",
+          "Collaborative sketching and brainstorming",
+          "Worked on mural drafts",
+          "Experienced interviewing",
+          "Painted parts of a final mural"
+        ]
+      },
+      {
+        "title": "Undergraduate Researcher",
+        "program": "\"Culture Works\" mural",
+        "location": "UW-Milwaukee Undergraduate Research, Milwaukee, WI",
+        "dates": "January 2017-May 2017",
+        "details": [
+          "Advanced to research assistant",
+          "Worked on finishing the mural",
+          "Participated in a research symposium",
+          "Promoted mural's unveiling"
+        ]
+      },
+      {
+        "title": "Service Learning Volunteer",
+        "location": "Wehr Nature Center, Milwaukee, WI",
+        "dates": "October 2017 December 2017",
+        "details": [
+          "Collaborated on Service-Learning hours",
+          "Volunteered at events"
+        ]
+      },
+      {
+        "title": "Fraternity Member",
+        "location": "Alpha Sigma Phi Fraternity, University of Wisconsin-Milwaukee, Milwaukee, WI",
+        "dates": "September 2017 – present",
+        "details": [
+          "Involved in committees",
+          "Participated in philanthropy events",
+          "Recruitment and resume workshop participation"
+        ]
+      },
+      {
+        "title": "Food Service Worker",
+        "location": "Sisters of St. Francis of Assisi, Milwaukee, WI",
+        "dates": "January 2018 – March 2022",
+        "details": [
+          "Meal preparation and service",
+          "Dining room maintenance"
+        ]
+      },
+      {
+        "title": "Spanish Teacher",
+        "location": "Futura Language Professionals, Milwaukee, WI",
+        "dates": "September 2021 – present",
+        "details": [
+          "Lesson planning and activity preparation",
+          "Student engagement in Spanish"
+        ]
+      },
+      {
+        "title": "Day Camp Instructor/Assistant Director",
+        "location": "Milwaukee Public Schools - Fernwood Montessori, Milwaukee, WI",
+        "dates": "November 2021 – October 2023",
+        "details": [
+          "Classroom management",
+          "Activity and meal coordination"
+        ]
+      },
+      {
+        "title": "Gallery Committee Member",
+        "location": "Jazz Gallery Center for the Arts, Milwaukee, WI",
+        "dates": "March 2022 – present",
+        "details": [
+          "Exhibition planning and hosting"
+        ]
+      },
+      {
+        "title": "Reading Tutor",
+        "location": "One on One Learning, Milwaukee, WI",
+        "dates": "November 2023 – present",
+        "details": [
+          "Tutoring in reading and comprehension"
+        ]
+      }
+    ],
+    "honors_and_activities": [
+      "Philanthropy Director at Alpha Sigma Phi Fraternity",
+      "Dean's List from Fall 2017 to Spring 2021",
+      "Frederick R. Layton Scholarship in 2019",
+      "Sigma Delta Pi Honor Society in Spring 2021"
+    ],
+    "skills": {
+      "languages": "Spanish - Advanced reading/comprehension",
+      "technology_and_art": [
+        "Windows",
+        "Microsoft Office (Paint, PowerPoint, Word)",
+        "Adobe Photoshop & Illustrator",
+        "Drawing/Sketching",
+        "Painting",
+        "Printmaking"
+      ],
+      "professionalism": [
+        "Structured",
+        "Detail-oriented",
+        "Methodical",
+        "Imaginative",
+        "Experimental",
+        "Adaptive",
+        "Relationship-oriented",
+        "Problem solver"
+      ]
+    }
+  }
+  
