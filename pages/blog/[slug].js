@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import Head from "next/head";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Image from "next/image";
@@ -14,7 +14,7 @@ import Image from "next/image";
 const BlogPost = ({ post }) => {
   const textOne = useRef();
   const textTwo = useRef();
-  // const router = useRouter();
+  const router = useRouter();
 
   useIsomorphicLayoutEffect(() => {
     stagger([textOne.current, textTwo.current], { y: 30 }, { y: 0 });
@@ -29,12 +29,16 @@ const BlogPost = ({ post }) => {
       {data.showCursor && <Cursor />}
 
       <div
-        className={`container mx-auto mt-10 ${
-          data.showCursor && "cursor-none"
-        }`}
+        className={`container mx-auto mt-10 ${data.showCursor && "cursor-none"
+          }`}
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
+          <div className="mb-4">
+          <button type="button" onClick={() => router.push('/blog')}>
+            Go Back
+          </button>
+          </div>
           <Image
             className="w-full h-96 rounded-lg shadow-lg object-cover"
             src={post.image}
