@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 import Image from "next/image";
+import { IoArrowBackSharp } from "react-icons/io5";
 
 const BlogPost = ({ post }) => {
   const textOne = useRef();
@@ -36,7 +37,7 @@ const BlogPost = ({ post }) => {
         <div className="mt-10 flex flex-col">
           <div className="mb-4">
           <button type="button" onClick={() => router.push('/blog')}>
-            Go Back
+          <IoArrowBackSharp/>Go Back
           </button>
           </div>
           <Image
