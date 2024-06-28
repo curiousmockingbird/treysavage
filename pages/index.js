@@ -140,9 +140,18 @@ export default function Home() {
         )} */}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+          <div className="flex flex-col laptop:flex-row items-center justify-center laptop:justify-start p-4">
+      <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-2/5">
+        {data.aboutpara}
+      </p>
+      <div className="flex justify-center items-center w-full laptop:w-3/5 mt-4 laptop:mt-0">
+        <img 
+          src="images/trey.jpg" 
+          alt="Headshot"
+          className="rounded-tl-3xl rounded-tr-3xl rounded-bl-full rounded-br-full w-80 h-80 object-cover"
+        />
+      </div>
+    </div>
         </div>
         <Footer />
       </div>
