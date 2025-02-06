@@ -99,23 +99,40 @@ export default function Home() {
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
-              <Link key={project.id} legacyBehavior href={`blog/${project.id}`}>
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-              />
+              <Link key={project.id} legacyBehavior href={`work/${project.id}`}>
+                <WorkCard
+                  key={project.id}
+                  img={project.imageSrc}
+                  name={project.title}
+                  description={project.description}
+                />
               </Link>
             ))}
           </div>
-            <div className="flex justify-center">
-            <Link legacyBehavior href={'/blog'}>
-            <a id="link">             
-            <h1 className="text-2xl text-bold">Show more...</h1>
-            </a>      
+          <div className="flex justify-center mt-12">
+            <Link href="/work" legacyBehavior>
+              <a
+                id="link"
+                className="
+        inline-block 
+        px-4 
+        py-2 
+        bg-blue-500 
+        text-white 
+        font-semibold 
+        rounded-md 
+        hover:bg-blue-600 
+        focus:outline-none 
+        focus:ring-2 
+        focus:ring-blue-400 
+        focus:ring-opacity-75
+        transition-colors
+      "
+              >
+                Show more...
+              </a>
             </Link>
-            </div>
+          </div>
         </div>
 
         {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
@@ -141,17 +158,17 @@ export default function Home() {
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
           <div className="flex flex-col laptop:flex-row items-center justify-center laptop:justify-start p-4">
-      <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-2/5">
-        {data.aboutpara}
-      </p>
-      <div className="flex justify-center items-center w-full laptop:w-3/5 mt-4 laptop:mt-0">
-        <img 
-          src="images/trey.jpg" 
-          alt="Headshot"
-          className="rounded-tl-3xl rounded-tr-3xl rounded-bl-full rounded-br-full w-80 h-80 object-cover"
-        />
-      </div>
-    </div>
+            <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-2/5">
+              {data.aboutpara}
+            </p>
+            <div className="flex justify-center items-center w-full laptop:w-3/5 mt-4 laptop:mt-0">
+              <img
+                src="images/trey.jpg"
+                alt="Headshot"
+                className="rounded-tl-3xl rounded-tr-3xl rounded-bl-full rounded-br-full w-80 h-80 object-cover"
+              />
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

@@ -1,7 +1,7 @@
 ---
-date: "2022-07-08"
+date: "2021"
 title: Picasso Portrait
-tagline: This is a Tagline If you want to add.
+tagline: 16”x18”, acrylic
 preview: >-
   
 image: >-

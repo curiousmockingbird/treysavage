@@ -35,7 +35,7 @@ const Blog = ({ posts }) => {
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>Blog</title>
+          <title>Work</title>
         </Head>
         <div
           className={`container mx-auto mb-10 ${
@@ -56,7 +56,7 @@ const Blog = ({ posts }) => {
                   <div
                     className="cursor-pointer relative"
                     key={post.slug}
-                    onClick={() => Router.push(`/blog/${post.slug}`)}
+                    onClick={() => Router.push(`/work/${post.slug}`)}
                   >
                     <Image
                       className="w-full h-60 rounded-lg shadow-lg object-cover"
@@ -68,7 +68,7 @@ const Blog = ({ posts }) => {
                     <h2 className="mt-5 text-4xl">{post.title}</h2>
                     <p className="mt-2 opacity-50 text-lg">{post.preview}</p>
                     <span className="text-sm mt-5 opacity-25">
-                      {ISOToDate(post.date)}
+                      {post.date}
                     </span>
                   </div>
                 ))}

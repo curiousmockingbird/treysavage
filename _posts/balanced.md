@@ -1,8 +1,7 @@
 ---
-date: "2022-07-08"
+date: "2024"
 title: "Balanced and Free"
-tagline: This is a Tagline If you want to add.
-preview: >-
+tagline: 12”x16”, acrilyc
 image: >-
   https://res.cloudinary.com/graphicdesignportfolio/image/upload/v1707159937/samples/Trey/Skater_lwgyyy.png
 ---
