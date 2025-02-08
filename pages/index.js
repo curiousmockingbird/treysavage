@@ -10,7 +10,7 @@ import Head from "next/head";
 // import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
-// import Image from "next/image";
+import Image from "next/image";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -98,7 +98,7 @@ export default function Home() {
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
+            {data.projects.slice(0, 6).map((project) => (
               <Link key={project.id} legacyBehavior href={`work/${project.id}`}>
                 <WorkCard
                   key={project.id}
@@ -162,8 +162,10 @@ export default function Home() {
               {data.aboutpara}
             </p>
             <div className="flex justify-center items-center w-full laptop:w-3/5 mt-4 laptop:mt-0">
-              <img
-                src="images/trey.jpg"
+              <Image
+                width={320}
+                height={320}
+                src="/images/trey.jpg"
                 alt="Headshot"
                 className="rounded-tl-3xl rounded-tr-3xl rounded-bl-full rounded-br-full w-80 h-80 object-cover"
               />

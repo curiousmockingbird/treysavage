@@ -1,7 +1,7 @@
 ---
 date: "2021"
 title: Picasso Portrait
-tagline: 16”x18”, acrylic
+tagline: 16”x18”, mixed media
 preview: >-
   
 image: >-

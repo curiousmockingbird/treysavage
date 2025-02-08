@@ -1,6 +1,6 @@
 ---
 date: "2020"
-title: Quarantine Self-Portrait No.1
+title: Quarantine Self-Portrait
 tagline: 18”x24”, charcoal
 preview: >-
   
