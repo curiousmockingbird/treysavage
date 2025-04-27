@@ -74,16 +74,15 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Resume
-                    </Button>
+                    onClick={() => router.push("/resume")}
+                    classes="first:ml-1"
+                  >
+                    Resume
+                  </Button>
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:savagetc4599@wi.rr.com")}
                   >
                     Contact
                   </Button>
@@ -106,7 +105,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:savagetc4599@wi.rr.com")}
                   >
                     Contact
                   </Button>
@@ -175,7 +174,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("mailto:savagetc4599@wi.rr.com")}>
               Contact
             </Button>
 
